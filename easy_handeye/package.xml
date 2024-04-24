@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<?xml-model
-  href="http://download.ros.org/schema/package_format3.xsd"
+<?xml version="1.0"?> <?xml-model href="http://download.ros.org/schema/package_format3.xsd"
   schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
     <name>easy_handeye</name>
@@ -21,6 +19,7 @@
     <exec_depend>std_msgs</exec_depend>
     <exec_depend>std_srvs</exec_depend>
     <exec_depend>easy_handeye_msgs</exec_depend>
+    <exec_depend>rqt_easy_handeye</exec_depend> <!-- [j] ref: https://github.com/IFL-CAMP/easy_handeye/issues/1 -->
     <exec_depend>message_runtime</exec_depend>
     <exec_depend>tf2_ros</exec_depend>
     <exec_depend>python-transforms3d-pip</exec_depend>

@@ -189,7 +189,11 @@ class CalibrationMovements:
 
     @staticmethod
     def _is_crazy_plan(plan, max_rotation_per_joint):
+        # 8
+        print(f"[#1]\n{plan}\n")
+        print(f"#2\n{max_rotation_per_joint}\n")
         abs_rot_per_joint = CalibrationMovements._rot_per_joint(plan)
+        # param 7
         if (abs_rot_per_joint > max_rotation_per_joint).any():
             return True
         else:

@@ -6,3 +6,7 @@ datasets
 *.pyc
 
 */cmake-build-debug
+.DS_Store
+.nvimlog
+*.swp
+

@@ -39,6 +39,8 @@ class RqtHandeyeCalibration(Plugin):
         if not args.quiet:
             print('arguments: ', args)
             print('unknowns: ', unknowns)
+        print('[j.RqtHandeyeCalibration]')
+        print(__file__, rospy.get_namespace()) # [j] this outputs /, and should be wrong
 
         # Create QWidgets
         self._widget = QWidget()

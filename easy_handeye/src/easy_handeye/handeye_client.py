@@ -11,7 +11,11 @@ class HandeyeClient(object):
 
     def __init__(self, namespace=None):
         if namespace is None:
-            namespace = rospy.get_namespace()
+            print('[j.client]')
+            print(rospy.get_name())
+            print(rospy.get_namespace())
+            print('[]')
+            namespace = rospy.get_namespace() # [j] here get `/`, caller namespace
 
         self.parameters = None
         self.list_algorithms_proxy = None

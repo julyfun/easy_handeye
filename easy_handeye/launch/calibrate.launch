@@ -73,6 +73,8 @@
               output="screen" />
 
         <!-- start rqt GUI for taking_samples -->
+        <!-- [j] why this is not starting -->
+        <!-- if I call this via cli rqt, the namespace would be '/' and the node crashes. -->
         <node if="$(arg start_sampling_gui)" name="$(anon namespace)_rqt" pkg="rqt_easy_handeye" type="rqt_easy_handeye" respawn="false" output="screen" />
 
         <!-- start the GUI for moving the robot around the starting pose -->

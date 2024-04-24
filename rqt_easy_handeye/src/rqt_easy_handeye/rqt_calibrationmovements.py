@@ -180,6 +180,7 @@ class RqtCalibrationMovements(Plugin):
         if not args.quiet:
             print('arguments: ', args)
             print('unknowns: ', unknowns)
+        # print(f"[j] {__file__}, {rospy.get_namespace()}") # this still outputs `/`, and works correctly??
 
         # Create QWidget
         self._widget = CalibrationMovementsGUI()
